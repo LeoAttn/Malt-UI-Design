@@ -4,22 +4,25 @@ block style
     link(rel='stylesheet', href='/stylesheets/profile.css')
 
 block content
-    div.flex-inline.header
+    div.flex-inline.header.message-block
         div.photo
             i.fas.fa-user
-        h1.
+        h2.
             Jean Michel Olifirenkof
-        div.note
-            h3.
-                Note : 4.5/5
+        div
+            i.fas.fa-star
+
+
     div.flex-inline.header
         div.skills
             h2 Competences
-            ul
+            div.sepa-h
+            div.flex.skillbox
                 each skill in ["C++", "Go", "C", "Python 3.6", "PHP", "Web Assembly"]
-                    li= skill
+                    span= skill
         div.bio
             h2 Bio
+            div.sepa-h
             p.
                 Quae qui quos dolores nesciunt. Et nam sequi quis sit optio laboriosam. Veniam non et et qui omnis.
 
@@ -28,6 +31,7 @@ block content
 
     div.advice
         h2 Recommandations
+        div.sepa-h
         each v in [0, 1, 2, 3]
             div.message-block
                 div.photo

@@ -143,6 +143,11 @@ i {
     margin: 1em 0;
 }
 
+.sepa-h {
+    width: 90%;
+    border : solid #E7E7E7 1px;
+}
+
 .message-block .content {
     padding: 1rem;
 }
@@ -151,3 +156,4 @@ i {
     font-weight: bold;
     margin-bottom: 0.2em;
 }
+
