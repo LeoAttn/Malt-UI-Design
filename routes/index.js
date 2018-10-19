@@ -6,21 +6,18 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });
 
-router.get('/messages', function(req, res, next) {
-    res.render('messages', { title: 'Messages' });
-});
 router.get('/advanced_search', function (req, res, next) {
 
     res.render('advanced_search', {cats: categories});
 });
 router.get('/fav', function (req, res, next) {
-    res.render('fav', {title: 'Express'});
+    res.render('fav', {title: 'Favorites'});
 });
 router.get('/missions', function (req, res, next) {
-    res.render('missions', {title: 'Express'});
+    res.render('missions', {title: 'Missions'});
 });
-router.get('/messages', function (req, res, next) {
-    res.render('messages', {title: 'Express'});
+router.get('/messages', function(req, res, next) {
+    res.render('messages', { title: 'Messages' });
 });
 router.get('/message:id', function (req, res, next) {
     res.render('message', {title: 'Express'});
