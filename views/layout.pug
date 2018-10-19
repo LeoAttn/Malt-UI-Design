@@ -1,28 +1,31 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.4.1/css/all.css')
-    block style
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.4.1/css/all.css')
+        block style
 
-  body
-    if "/" != /^[^?]*/.exec(url)
-      a(href="/")
-        img#logo-home(src="/images/logo/logo-malt.png")
+    body
+        if "/" != /^[^?]*/.exec(url)
+            div#home
+                a(href="/")
+                    img#logo-home(src="/images/logo/logo-malt.png")
+                div.sepa-v
+                div.name= title
 
-    block content
+        block content
 
-    div#navbar
-      a(href="advanced_search")
-        i.fas.fa-search
-      a(href="favs")
-        i.fas.fa-heart
-      a(href="missions")
-        i.fas.fa-mountain
-      a(href="messages")
-        i.fas.fa-comment-alt
-      a(href="profile")
-        i.fas.fa-user
+        div#navbar
+            a(href="advanced_search")
+                i.fas.fa-search
+            a(href="favs")
+                i.fas.fa-heart
+            a(href="missions")
+                i.fas.fa-mountain
+            a(href="messages")
+                i.fas.fa-comment-alt
+            a(href="profile")
+                i.fas.fa-user
 
 
