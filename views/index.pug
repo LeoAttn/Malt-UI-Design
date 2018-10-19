@@ -2,5 +2,26 @@ extends layout
 
 block content
     img#logo(src="/images/logo/logo-malt-carre.png")
-    p#slogan les <b>meilleurs freelances</b> proches de vous
-    p Welcome to #{title}
+    p#slogan.shadow les <b>meilleurs freelances</b> proches de vous
+
+    div#recherche.shadow
+        div
+            i.fas.fa-search
+            input(placeholder="Métier")
+        div.separation
+        div
+            i.fas.fa-map-marker-alt
+            input(placeholder="Pays, Régions, Ville, ...")
+        button Rechercher
+
+    div#navbar
+        a(href="")
+            i.fas.fa-search
+        a(href="")
+            i.fas.fa-heart
+        a(href="")
+            i.fas.fa-mountain
+        a(href="")
+            i.fas.fa-comment-alt
+        a(href="")
+            i.fas.fa-user
