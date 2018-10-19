@@ -1,25 +1,30 @@
+@rose : #FC275C;
+
 * {
-  font-family: "DejaVu Sans", SansSerif;
+    font-family: "DejaVu Sans", "SansSerif";
 }
 body {
-  padding: 30px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: url("/images/photo_fond.jpg") center no-repeat;
-  background-size: cover;
-  background-position: 65% 0;
-  height: 80vh;
+    padding: 30px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: url("/images/photo_fond.jpg") center no-repeat;
+    background-size: cover;
+    background-position: 65% 0;
+    height: 80vh;
 }
 
 a {
-  color: #00B7FF;
+    color: #00B7FF;
 }
 
 #logo {
-  display: block;
-  margin: auto;
-  width: 12em;
+    display: block;
+    margin: auto;
+    width: 12em;
 }
 
 #slogan {
-  font-size: 3.2em;
+    font-size: 3.2em;
+    color: white;
+    text-align: center;
+    text-shadow: #666 0 0 10px;
 }
