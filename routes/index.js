@@ -14,28 +14,83 @@ router.get('/fav', function (req, res, next) {
     res.render('fav', {title: 'Favorites'});
 });
 router.get('/missions', function (req, res, next) {
-    res.render('missions', {title: 'Missions'});
+    let projects = [
+        {
+            name : "Kiddie Proxy",
+            desc: "Proxy for kiddies",
+            ppl : "Jules Rognoni",
+            hour : new Date().toLocaleTimeString(),
+        },
+        {
+            name : "Projet Zoulou",
+            desc: "Un projet super",
+            ppl: "Jules Rognoni",
+            hour : new Date().toLocaleTimeString(),
+        },
+        {
+            name : "Go Milou !",
+            desc: "Detecte le Shadow IT !",
+            ppl : "Tom Barnier",
+            hour : new Date().toLocaleTimeString(),
+        },
+        {
+            name : "Labo Secu",
+            desc: "Sekuritay",
+            ppl: "Aria Groult",
+            hour : new Date().toLocaleTimeString(),
+        },
+        {
+            name : "Super Projet",
+            lastMsg: "Hello....",
+            ppl: "Jean Michel Olifirenkof",
+            hour : new Date().toLocaleTimeString(),
+        }
+    ];
+    res.render('missions', {title: 'Missions', missions:  projects});
 });
+
+router.get('/mission/:id', function (req, res, next) {
+    let project =  {
+        name : "Kiddie Proxy",
+        desc: "Proxy for kiddies",
+        ppl : "Jules Rognoni",
+        hour : new Date().toLocaleTimeString(),
+    };
+    res.render('mission', {title:  mission.project, mission:  mission});
+});
+
 router.get('/messages', function(req, res, next) {
 
-    var messages = [
+    let messages = [
         {
             name : "Bob",
             lastMsg: "Bonjour....",
             msgs : [],
-            hour : new Date(),
+            hour : new Date().toLocaleTimeString(),
         },
         {
             name : "Sully",
             lastMsg: "Tu as pu avancer le projet ",
             msgs : [],
-            hour : new Date(),
+            hour : new Date().toLocaleTimeString(),
         },
         {
-            name : "",
+            name : "Germaine",
             lastMsg: "Hello....",
             msgs : [],
-            hour : new Date(),
+            hour : new Date().toLocaleTimeString(),
+        },
+        {
+            name : "Leon",
+            lastMsg: "Grrr",
+            msgs : [],
+            hour : new Date().toLocaleTimeString(),
+        },
+        {
+            name : "Germaine",
+            lastMsg: "Hello....",
+            msgs : [],
+            hour : new Date().toLocaleTimeString(),
         }
     ];
 
