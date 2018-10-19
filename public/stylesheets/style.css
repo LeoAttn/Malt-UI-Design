@@ -138,6 +138,7 @@ i {
 .message-block {
     display: flex;
     color: #000;
+    font-style: normal;
     align-items: center;
     background-color: #FFF;
     border-radius: 0.4em;
@@ -217,4 +218,19 @@ i {
     font-weight: bold;
     margin-bottom: 1em;
     align-self: flex-end;
+}
+.header {
+    display : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    width : 100%;
+
+}
+
+.fav_button i:hover {
+    color: #00B7FF;
+}
+
+.fav_button i:active {
+    color: #647dfb;
 }
