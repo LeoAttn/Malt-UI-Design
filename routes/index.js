@@ -17,9 +17,32 @@ router.get('/missions', function (req, res, next) {
     res.render('missions', {title: 'Missions'});
 });
 router.get('/messages', function(req, res, next) {
-    res.render('messages', { title: 'Messages' });
+
+    var messages = [
+        {
+            name : "Bob",
+            lastMsg: "Bonjour....",
+            msgs : [],
+            hour : new Date(),
+        },
+        {
+            name : "Sully",
+            lastMsg: "Tu as pu avancer le projet ",
+            msgs : [],
+            hour : new Date(),
+        },
+        {
+            name : "",
+            lastMsg: "Hello....",
+            msgs : [],
+            hour : new Date(),
+        }
+    ];
+
+
+    res.render('messages', { title: 'Messages', messages: messages });
 });
-router.get('/message:id', function (req, res, next) {
+router.get('/message/:id', function (req, res, next) {
     res.render('message', {title: 'Express'});
 });
 router.get('/profile', function (req, res, next) {
