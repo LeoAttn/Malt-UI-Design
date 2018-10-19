@@ -27,6 +27,12 @@ a {
     width: 12em;
 }
 
+#logo-home {
+    display: block;
+    width: 6em;
+    margin-bottom: 2em;
+}
+
 #slogan {
     font-size: 3.2em;
     color: white;
@@ -110,4 +116,38 @@ i {
 
 #navbar a:hover i {
     color: #FFF;
+}
+
+
+.message-block {
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 0.4em;
+    margin: 0.5rem;
+}
+
+.message-block .photo {
+    padding: 1rem;
+}
+
+.message-block .photo i {
+    padding: 0.5rem;
+    border: solid #c7c7c7 0.2rem;
+    border-radius: 50%;
+}
+
+.sepa-v {
+    height: 4rem;
+    border: solid #E7E7E7 1px;
+    margin: 1em 0;
+}
+
+.message-block .content {
+    padding: 1rem;
+}
+
+.message-block .name {
+    font-weight: bold;
+    margin-bottom: 0.2em;
 }

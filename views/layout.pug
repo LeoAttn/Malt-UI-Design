@@ -7,6 +7,10 @@ html
     block style
 
   body
+    if "/" != /^[^?]*/.exec(url)
+      a(href="/")
+        img#logo-home(src="/images/logo/logo-malt.png")
+
     block content
 
     div#navbar
