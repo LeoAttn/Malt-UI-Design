@@ -175,7 +175,7 @@ i {
 
 .message-block .content {
     display: flex;
-    width: auto;
+    width: 100%;
     flex-direction: column;
     align-items: stretch;
     padding: 1rem;
@@ -191,5 +191,30 @@ i {
     text-align: right;
     font-style: italic;
     margin-top: 0.2em;
+    align-self: flex-end;
+}
+
+.list-mess {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.message-block.conv {
+    width: 70%;
+}
+
+.conv.right {
+    align-self: flex-end;
+    background-color: #c6ffdd;
+}
+.conv.left {
+    width: 70%;
+    background-color: #bfe3ff;
+}
+
+.conv .hour {
+    font-weight: bold;
+    margin-bottom: 1em;
     align-self: flex-end;
 }
