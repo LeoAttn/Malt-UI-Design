@@ -4,20 +4,22 @@ block style
     link(rel='stylesheet', href='/stylesheets/advanced_search.css')
 
 block content
-    span
-        img.search_icon
-        input(type="search" placeholder="Recherchez un freelancer")
+    div#recherche.shadow
+        div
+            i.fas.fa-search
+            input(type="search" placeholder="Recherchez un freelancer")
     div
         h1 Top profils
         div.flex.spc_arround
-            div.arrow
+            div.arroweach
                 img
-            div.box
-            div.box
-            div.box
+            each val in ["Bob Razovski", "Jacques Sullivan", "Germaine"]
+                div.box(syle="background-image=url('images/#{{val}}.jpg');")
+                    h2(style="color:white")= val
             div.arrow
                 img
     div.flex.cats
-        each val in ["React.js","Vue.js","Angular.js","node.js","Django.js","Symphony.js","Java","GO","C++","C","WebAssembly","ASM"]
-            div.cat1
-                h2= val
+        each val in ["React.js","Vue.js","Angular.js","node.js","Django","Symphony","Java","GO","C++","C","WebAssembly","ASM"]
+            a
+                div.cat1(syle="background-image=url('images/lang/#{{val}}.png');")
+                    h2(style="color:white")= val

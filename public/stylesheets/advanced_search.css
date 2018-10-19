@@ -17,6 +17,8 @@
 
 .box {
     border-radius: 0.4rem;
+    margin: 0.1em;
+    text-align: center;
     background: #a4d0ed;
     width: 150px;
     height : 150px;

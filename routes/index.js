@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/advanced_search', function (req, res, next) {
 
-    res.render('advanced_search', {cats: categories});
+    res.render('advanced_search', {title: "Advandced Searched"});
 });
 router.get('/fav', function (req, res, next) {
     res.render('fav', {title: 'Favorites'});
