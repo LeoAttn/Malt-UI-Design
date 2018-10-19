@@ -1,0 +1,40 @@
+extends layout
+
+block style
+    link(rel='stylesheet', href='/stylesheets/profile.css')
+
+block content
+    div.flex-inline.header
+        div.photo
+            i.fas.fa-user
+        h1.
+            Jean Michel Olifirenkof
+        div.note
+            h3.
+                Note : 4.5/5
+    div.flex-inline.header
+        div.skills
+            h2 Competences
+            ul
+                each skill in ["C++", "Go", "C", "Python 3.6", "PHP", "Web Assembly"]
+                    li= skill
+        div.bio
+            h2 Bio
+            p.
+                Quae qui quos dolores nesciunt. Et nam sequi quis sit optio laboriosam. Veniam non et et qui omnis.
+
+                Enim ea blanditiis aperiam itaque qui deleniti. Est ducimus id ipsam quia. Et voluptas est voluptate ut commodi et animi. Sunt facilis est modi iure assumenda deserunt. Sit error quidem ex eaque
+                Enim ea blanditiis aperiam itaque qui deleniti. Est ducimus id ipsam quia. Et voluptas est voluptate ut commodi et animi. Sunt facilis est modi iure assumenda deserunt. Sit error quidem ex eaque
+
+    div.advice
+        h2 Recommandations
+        each v in [0, 1, 2, 3]
+            div.message-block
+                div.photo
+                    i.fas.fa-user
+                div.sepa-v
+                div.content
+                    div.name Bob
+                    div.message Bon travail !.
+
+            //nsert message box.
