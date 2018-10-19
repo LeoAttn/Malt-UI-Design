@@ -10,8 +10,118 @@ router.get('/advanced_search', function (req, res, next) {
 
     res.render('advanced_search', {title: "Advandced Searched"});
 });
-router.get('/fav', function (req, res, next) {
-    res.render('fav', {title: 'Favorites'});
+router.get('/favs', function (req, res, next) {
+    items = [
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+        {
+            name : "Germaine"
+        },
+
+        {
+            name : "Germaine"
+        }
+
+    ];
+
+    res.render('fav', {title: 'Favorites', items: items});
 });
 router.get('/missions', function (req, res, next) {
     let projects = [
@@ -56,7 +166,7 @@ router.get('/mission/:id', function (req, res, next) {
         ppl : "Jules Rognoni",
         hour : new Date().toLocaleTimeString(),
     };
-    res.render('mission', {title:  mission.project, mission:  mission});
+    res.render('mission', {title:  project.name, mission:  project});
 });
 
 router.get('/messages', function(req, res, next) {

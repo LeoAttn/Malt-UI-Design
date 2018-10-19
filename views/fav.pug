@@ -1,0 +1,10 @@
+extends layout
+
+block style
+    link(rel='stylesheet', href='/stylesheets/advanced_search.css')
+
+block content
+    div.flex.cats
+        each val, index in items
+            div.cat1(syle="background-image=url('images/lang/#{{val.name}}.png');")
+                h2(style="color:white")= val.name
