@@ -14,7 +14,7 @@ router.get('/fav', function (req, res, next) {
     res.render('fav', {title: 'Favorites'});
 });
 router.get('/missions', function (req, res, next) {
-    res.render('messages', {title: 'Missions'});
+    res.render('missions', {title: 'Missions'});
 });
 router.get('/messages', function(req, res, next) {
     res.render('messages', { title: 'Messages' });

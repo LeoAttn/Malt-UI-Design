@@ -127,14 +127,13 @@ i {
     color: #71768E;
 }
 
-#navbar .active i{
+#navbar .active i {
     color: #FFF;
 }
 
 #navbar a:hover i {
     color: #FFF;
 }
-
 
 .message-block {
     display: flex;
@@ -146,7 +145,11 @@ i {
 }
 
 .message-block:hover {
-    background-color: #eee;
+    background-color: #EEE;
+}
+
+.no-click:hover {
+    background-color: #FFF;
 }
 
 .message-block .photo {
@@ -167,10 +170,14 @@ i {
 
 .sepa-h {
     width: 90%;
-    border : solid #E7E7E7 1px;
+    border: solid #E7E7E7 1px;
 }
 
 .message-block .content {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: stretch;
     padding: 1rem;
 }
 
@@ -179,3 +186,10 @@ i {
     margin-bottom: 0.2em;
 }
 
+.message-block .author {
+
+    text-align: right;
+    font-style: italic;
+    margin-top: 0.2em;
+    align-self: flex-end;
+}
