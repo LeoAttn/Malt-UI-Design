@@ -11,11 +11,17 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: 65% 0;
-    height: 90vh;
+    height: 100%;
+    max-width: 960px;
+    margin: auto auto 4rem;
 }
 
 a {
     color: #00B7FF;
+}
+
+.sepa-white {
+    border-color: #FFF !important;
 }
 
 .shadow {
@@ -86,7 +92,7 @@ i {
     font-size: 1.1rem;
     border: none;
     padding: 1.5rem;
-    width: auto;
+    width: 100%;
     min-width: 1em;
 }
 
@@ -138,7 +144,7 @@ i {
 .message-block {
     display: flex;
     color: #000;
-    font-style: normal;
+    text-decoration: none;
     align-items: center;
     background-color: #FFF;
     border-radius: 0.4em;
@@ -197,34 +203,39 @@ i {
 
 .list-mess {
     display: flex;
+    margin-bottom: 5.2em;
     width: 100%;
     flex-direction: column;
 }
 
 .message-block.conv {
     width: 70%;
+    margin: 0 0 0.5em 0;
 }
 
 .conv.right {
     align-self: flex-end;
-    background-color: #c6ffdd;
+    background-color: #F4FF81;
 }
+
 .conv.left {
     width: 70%;
-    background-color: #bfe3ff;
+    background-color: #A7FFEB;
 }
 
 .conv .hour {
     font-weight: bold;
-    margin-bottom: 1em;
+    margin-top: 0.3em;
     align-self: flex-end;
+    color: #6D7F8F;
 }
-.header {
-    display : flex;
-    flex-direction : row;
-    justify-content: space-between;
-    width : 100%;
 
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 1em 0;
 }
 
 .fav_button i:hover {
@@ -233,4 +244,47 @@ i {
 
 .fav_button i:active {
     color: #647dfb;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fixed-send {
+    position: fixed;
+    bottom: 6em;
+    /*left: 0;*/
+    width: 100%;
+    max-width: 1020px;
+    margin-left: -30px;
+}
+
+#send {
+    margin: 0 30px;
+    background-color: #FFF;
+    border-radius: 0.4rem;
+    /*color: #B2B2B2;*/
+    overflow: hidden;
+    display: flex;
+}
+
+#send textarea {
+    display: block;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    min-width: 1em;
+}
+
+#send button {
+    background-color: #FC275C;
+    font-size: 1.1rem;
+    border: none;
+    color: #FFF;
+}
+
+#send button:active {
+    background-color: #ce224f;
 }

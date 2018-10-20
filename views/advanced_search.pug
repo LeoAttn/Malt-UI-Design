@@ -19,7 +19,8 @@ block content
             div.arrow
                 img
 
-        each val in ["React.js","Vue.js","Angular.js","node.js","Django","Symphony","Java","GO","C++","C","WebAssembly","ASM"]
-            a
-                div.cat1(syle="background-image=url('images/lang/#{{val}}.png');")
-                    h2(style="color:white")= val
+        div.flex.cats
+            each val in ["React.js","Vue.js","Angular.js","node.js","Django","Symphony","Java","GO","C++","C","WebAssembly","ASM"]
+                a
+                    div.cat1(syle="background-image=url('images/lang/#{{val}}.png');")
+                        h2(style="color:white")= val

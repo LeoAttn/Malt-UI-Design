@@ -208,10 +208,10 @@ router.get('/messages', function(req, res, next) {
     res.render('messages', { title: 'Messages', messages: messages });
 });
 router.get('/message/:id', function (req, res, next) {
-    res.render('message', {title: 'Express'});
+    res.render('message', {title: 'Message'});
 });
 router.get('/profile', function (req, res, next) {
-    res.render('profile', {title: 'Express'});
+    res.render('profile', {title: 'Profile'});
 });
 
 module.exports = router;

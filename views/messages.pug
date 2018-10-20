@@ -7,5 +7,7 @@ block content
                 i.fas.fa-user
             div.sepa-v
             div.content
-                div.name= message.name + ' ' + message.hour
+                div
+                    span.name= message.name
+                    span= '  à  ' + message.hour
                 div.message= message.lastMsg
