@@ -4,36 +4,21 @@ block content
     div.flex-inline.header.message-block.no-click
         div.photo
             i.fas.fa-user
-        h2.
-            Jean Michel Olifirenkof
-        div.fav_button
-            i.fas.fa-star
+        h2= message.name
+        div
 
     .list-mess
-        a.message-block.conv.left
-            div.content
-                div.message Bonjour.
-                div.hour 14:20
-
-        a.message-block.conv.right
-            div.content
-                div.message Salut.
-                div.hour 14:21
-
-        a.message-block.conv.right
-            div.content
-                div.message sqfohg pqihrgo rihpi hzrogi h.
-                div.hour 14:25
-
-        a.message-block.conv.left
-            div.content
-                div.message Bfghg rgoeihs ershg qfoih sqfgbqr d hw sfwb.
-                div.hour 23:30
-
-        a.message-block.conv.right
-            div.content
-                div.message Bsfoighs roghg ohrreogihso hregoshr qogrh eog hreo hrehw sfwb sgr rg rqg.
-                div.hour 23:36
+        each msg in message.msgs
+            if msg.owner === "other"
+                a.message-block.conv.left
+                    div.content
+                        div.message= msg.text
+                        div.hour= msg.hour
+            else
+                a.message-block.conv.right
+                    div.content
+                        div.message= msg.text
+                        div.hour= msg.hour
 
     div.fixed-send
         div#send.shadow

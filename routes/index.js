@@ -208,7 +208,43 @@ router.get('/messages', function(req, res, next) {
     res.render('messages', { title: 'Messages', messages: messages });
 });
 router.get('/message/:id', function (req, res, next) {
-    res.render('message', {title: 'Message'});
+    let message = {
+        name : "Bob",
+        msgs : [
+            {
+                owner : "other",
+                text : "Bonjour.",
+                hour : new Date().toLocaleTimeString()
+            },
+            {
+                owner : "other",
+                text : "Je recherche un developper React pour mon projet de WebMobile, J'ai vu votre profil qui semblait convenir. Seriez vous disponible pour en discuter ?",
+                hour : new Date().toLocaleTimeString()
+            },
+            {
+                owner : "owner",
+                text : "Bonjour, votre projet m'interesse je suis pret a m'investir pour l'aventure",
+                hour : new Date().toLocaleTimeString()
+            },
+            {
+                owner : "other",
+                text : "Parfait voici le lien de la mission : https://super.projet.com",
+                hour : new Date().toLocaleTimeString()
+            },
+            {
+                owner : "owner",
+                text : "Merci, je vous recontacte apres avoir regarde tout ca",
+                hour : new Date().toLocaleTimeString()
+            },
+            {
+                owner : "owner",
+                text : "A bientot.",
+                hour : new Date().toLocaleTimeString()
+            }
+        ]
+    };
+
+    res.render('message', {title: 'Message', message});
 });
 router.get('/profile', function (req, res, next) {
     res.render('profile', {title: 'Profile'});
