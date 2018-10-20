@@ -16,6 +16,7 @@ h2 {
     background : white;
     border-radius: 0.4em;
     margin-right: 0 !important;
+    overflow-y: scroll;
 }
 
 .header {
@@ -29,9 +30,13 @@ h2 {
     margin : 10px;
 }
 
+.bioSkillzbox {
+    height : 30%;
+}
+
 .advice {
     width : 100%;
-    height : 400px;
+    height: 40%;
     border-radius: 0.4em;
     background : white;
     overflow-y: scroll;

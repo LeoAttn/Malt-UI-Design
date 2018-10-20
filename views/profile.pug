@@ -13,12 +13,12 @@ block content
             i.fas.fa-star
 
 
-    div.flex-inline.header
+    div.flex-inline.header.bioSkillzbox
         div.skills
             h2 Competences
             div.sepa-h
             div.flex.skillbox
-                each skill in ["C++", "Go", "C", "Python 3.6", "PHP", "Web Assembly"]
+                each skill in ["C++", "Go", "C", "Python 3.6"]
                     span= skill
         div.bio
             h2 Bio
@@ -32,13 +32,14 @@ block content
     div.advice
         h2 Recommandations
         div.sepa-h
-        each v in [0, 1, 2, 3]
-            div.message-block
-                div.photo
-                    i.fas.fa-user
-                div.sepa-v
-                div.content
-                    div.name Bob
-                    div.message Bon travail !.
+        div.advices
+            each v in [0, 1, 2, 3]
+                div.message-block
+                    div.photo
+                        i.fas.fa-user
+                    div.sepa-v
+                    div.content
+                        div.name Bob
+                        div.message Bon travail !.
 
             //nsert message box.
