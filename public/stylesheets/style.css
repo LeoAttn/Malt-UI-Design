@@ -266,7 +266,7 @@ body {
 
 .fixed-send {
     position: fixed;
-    bottom: 6em;
+    bottom: 10vh;
     /*left: 0;*/
     width: 100%;
     max-width: 1020px;
