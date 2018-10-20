@@ -24,6 +24,10 @@ content {
     overflow-y: auto;
 }
 
+.home-content {
+    height: 90vh;
+}
+
 a {
     color: #00B7FF;
 }
@@ -78,6 +82,7 @@ a {
 
 input {
     color: #B2B2B2;
+    background-color: transparent;
 }
 
 #recherche {
@@ -87,6 +92,7 @@ input {
     width: 80%;
     color: #B2B2B2;
     overflow: hidden;
+    margin-bottom: 0.5rem;
 }
 
 #recherche div {

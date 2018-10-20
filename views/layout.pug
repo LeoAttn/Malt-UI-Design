@@ -4,7 +4,8 @@ html
         title= title
         link(rel='stylesheet', href='/stylesheets/style.css')
         link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.4.1/css/all.css')
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
         block style
 
     body
@@ -14,8 +15,12 @@ html
                     img#logo-home(src="/images/logo/logo-malt.png")
                 div.sepa-v.sepa-white
                 div.name= title
-        content
-            block content
+
+            content
+                block content
+        else
+            content.home-content
+                block content
 
         div#navbar
             a(href="/advanced_search")
