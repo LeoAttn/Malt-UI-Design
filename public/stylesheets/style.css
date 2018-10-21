@@ -5,7 +5,7 @@
 }
 
 body {
-    padding: 0px;
+    padding: 0;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     background: url("/images/photo_fond.jpg") center no-repeat;
     background-size: cover;
@@ -192,6 +192,7 @@ i {
     padding: 0.5rem;
     border: solid #c7c7c7 0.2rem;
     border-radius: 50%;
+    height : 100%;
 }
 
 .sepa-v {
@@ -311,4 +312,10 @@ body {
 
 #send button:active {
     background-color: #ce224f;
+}
+
+.list-mess {
+    height: 70vh;
+    max-height : 70vh;
+    overflow-y: scroll;
 }
