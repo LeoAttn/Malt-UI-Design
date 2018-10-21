@@ -6,5 +6,6 @@ block style
 block content
     div.flex.cats
         each val, index in items
-            div.cat1(syle="background-image=url('images/lang/#{{val.name}}.png');")
+            a
+                div.box(style="background-image:url('/images/" + val.name + ".png');")
                 h2(style="color:white")= val.name

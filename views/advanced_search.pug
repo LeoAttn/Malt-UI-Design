@@ -14,13 +14,17 @@ block content
             div.arroweach
                 img
             each val in ["Bob Razovski", "Jacques Sullivan", "Germaine"]
-                div.box(syle="background-image=url('images/#{{val}}.jpg');")
+                a
+
+                    div.box(style="background-image:url('/images/" + val + ".png');")
                     h2(style="color:white")= val
+
             div.arrow
                 img
-
+        h2 By Programming Language
         div.flex.cats
-            each val in ["React.js","Vue.js","Angular.js","node.js","Django","Symphony","Java","GO","C++","C","WebAssembly","ASM"]
+            each val in ["React.js","Vue.js","Angular.js","node.js","Django","Symfony","Java","GO","C++","C","WebAssembly","ASM"]
                 a
-                    div.cat1(syle="background-image=url('images/lang/#{{val}}.png');")
-                        h2(style="color:white")= val
+                    h2= val
+                    div.sepa-h
+                    div.cat1(style="background-image:url('/images/lang/" + val + ".png');")
