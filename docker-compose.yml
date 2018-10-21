@@ -1,0 +1,7 @@
+version: '2'
+services:
+  backend:
+    build: ./
+    restart: always
+    volumes:
+    - /etc/localtime:/etc/localtime:ro
